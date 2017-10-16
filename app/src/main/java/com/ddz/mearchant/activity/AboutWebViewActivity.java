@@ -24,6 +24,8 @@ public class AboutWebViewActivity extends BaseActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_diandian_web);
         initViews();
+
+
     }
 
     @Override
