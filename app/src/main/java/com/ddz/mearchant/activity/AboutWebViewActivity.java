@@ -25,6 +25,8 @@ public class AboutWebViewActivity extends BaseActivity implements View.OnClickLi
         setContentView(R.layout.activity_about_diandian_web);
         initViews();
 
+  //////////////////////
+
 
     }
 
