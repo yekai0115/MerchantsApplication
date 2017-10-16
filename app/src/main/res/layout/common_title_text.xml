@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/tab_line_color"
+    >
+    <RelativeLayout
+        android:id="@+id/my_shop_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:id="@+id/title_htv_left"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/return_back"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+
+        <com.ddz.mearchant.view.HandyTextView
+            android:id="@+id/title_htv_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="店铺名"
+            android:layout_marginBottom="9dp"
+            android:layout_marginTop="9dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <com.ddz.mearchant.view.HandyTextView
+            android:id="@+id/title_htv_rigit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="保存"
+            android:visibility="gone"
+            android:layout_marginBottom="9dp"
+            android:layout_marginTop="9dp"
+            android:textColor="@color/bg_color"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</RelativeLayout>

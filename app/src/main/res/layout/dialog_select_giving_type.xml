@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="172dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp">
+        <ImageView
+            android:id="@+id/giving_type_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/earnings_close"
+            />
+        <com.ddz.mearchant.view.HandyTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="选择赠送类型"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="21sp"
+            android:textColor="#282828"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d6d6d6"/>
+
+    <LinearLayout
+        android:id="@+id/incentive_points_linear"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <com.ddz.mearchant.view.HandyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="激励分"
+            android:textColor="#282828"
+            android:textSize="17sp" />
+
+        <com.ddz.mearchant.view.HandyTextView
+            android:id="@+id/incentive_num"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:textColor="#282828"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/my_select1" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="#d6d6d6"/>
+    <LinearLayout
+        android:id="@+id/good_points_linear"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <com.ddz.mearchant.view.HandyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="赞分"
+            android:textColor="#282828"
+            android:textSize="17sp" />
+
+        <com.ddz.mearchant.view.HandyTextView
+            android:id="@+id/good_num"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:textColor="#282828"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/my_select1" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d6d6d6"/>
+</LinearLayout>

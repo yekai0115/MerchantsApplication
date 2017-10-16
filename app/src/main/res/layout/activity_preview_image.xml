@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_text_gray3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/shop_name_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:orientation="horizontal"
+        >
+
+        <ListView
+            android:id="@+id/image_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null">
+        </ListView>
+    </LinearLayout>
+</LinearLayout>

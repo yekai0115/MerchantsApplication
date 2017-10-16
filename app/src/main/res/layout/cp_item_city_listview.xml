@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded">
+
+    <TextView
+        android:id="@+id/tv_item_city_listview_letter"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="36dp"
+        android:gravity="center_vertical"
+        android:textSize="15sp"
+        android:textColor="#969696"
+        android:background="#f5f5f5"
+        android:clickable="false"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_color"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:button="@null"
+            android:background="@drawable/checkbox_selector"
+            />
+        <TextView
+            android:id="@+id/tv_item_city_listview_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:paddingRight="@dimen/side_letter_bar_width"
+            android:textColor="#272727"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="@dimen/side_letter_bar_width"
+        android:background="#dadada"/>
+</LinearLayout>

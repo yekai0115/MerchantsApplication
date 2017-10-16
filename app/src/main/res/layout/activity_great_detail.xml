@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_text_gray3"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_text"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/shop_name_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <com.ddz.mearchant.view.HandyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="赞章总收入"
+            android:paddingTop="20dp"
+            android:background="@null"
+            android:textColor="#b2b2b2"
+            android:textSize="16sp" />
+
+        <com.ddz.mearchant.view.HandyTextView
+            android:id="@+id/great_detaile_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:background="@null"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/tab_line_color"
+            android:textSize="40sp" />
+    </LinearLayout>
+    <ListView
+        android:layout_marginTop="20dp"
+        android:id="@+id/great_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="10dp"
+        android:layout_below="@+id/shop_name_linear"
+        android:layout_above="@+id/linear_show"
+        android:divider="@color/bg_color">
+    </ListView>
+    <LinearLayout
+        android:id="@+id/linear_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:background="#3c3d4f"/>
+        <com.ddz.mearchant.view.HandyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#b2b2b2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="16sp"
+            android:text="显示最近七天交易"
+            />
+        <View
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:background="#3c3d4f"/>
+    </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ael_relative"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:visibility="invisible">
+    </RelativeLayout>
+</LinearLayout>

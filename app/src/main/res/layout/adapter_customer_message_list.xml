@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/order_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:orientation="horizontal">
+        <com.ddz.mearchant.view.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cus_mes_image"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:border_color="@color/bg_color"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            app:border_width="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23.5dp">
+                <com.ddz.mearchant.view.HandyTextView
+                    android:id="@+id/cus_mes_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="通知"
+                    android:textColor="@color/order_text_color"
+                    android:textSize="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+                <com.ddz.mearchant.view.HandyTextView
+                    android:id="@+id/cus_mes_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:text="通知"
+                    android:textColor="#848484"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <com.ddz.mearchant.view.HandyTextView
+                android:id="@+id/cus_mes_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="通知"
+                android:textColor="#848484"
+                android:textSize="13dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal">
+                <com.ddz.mearchant.view.HandyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="联系方式"
+                    android:textColor="#848484"
+                    android:textSize="13dp" />
+                <com.ddz.mearchant.view.HandyTextView
+                    android:id="@+id/cus_mes_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="联系方式"
+                    android:textColor="@color/tab_line_color"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/ad_table_col_divider"
+        />
+</LinearLayout>

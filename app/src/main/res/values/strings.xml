@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">STARDATA</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="ed_hint_inputphone">请输入手机号</string>
+    <string name="ed_hint_inputpwd">请输入密码</string>
+    <string name="tv_forgetpwd">忘记密码</string>
+    <string name="tv_shouye">首页</string>
+    <string name="tv_car">购物车</string>
+    <string name="tv_wode">我的</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="home_search_hint">搜索宝贝</string>
+    <string name="afl_code_len_err">请输入正确的验证码</string>
+    <string name="al_hint_inputphone">请输入正确的手机号</string>
+    <string name="al_getcode">获取验证码</string>
+    <string name="ae_add_bank">添加银行卡</string>
+    <string name="arp_set_pwd_err">密码设置有误，请确保两次密码一致且长度在6到30之间</string>
+    <string name="asp_input_incomplete">请输入密码</string>
+    <string name="pay_title">请输入支付密码</string>
+    <string name="pay_sure">确认支付</string>
+    <string name="pay_cancel">取消</string>
+    <string name="pay_exchange">兑换</string>
+    <string name="ae_money_sign">¥</string>
+    <string name="ae_alter_bank">是否修改银行卡</string>
+    <string name="abc_top">请绑定持卡人本人银行卡</string>
+    <string name="abc_name">持卡人</string>
+    <string name="abc_name_hint">请输入持卡人姓名</string>
+    <string name="abc_card_number">银行卡号</string>
+    <string name="abc_card_number_hint">请输入银行卡号</string>
+    <string name="abc_bank_name">开卡银行</string>
+    <string name="abc_bank_name_hint">请选择开卡银行</string>
+    <string name="abc_sub_name">开户支行</string>
+    <string name="abc_sub_name_hint">请输入开户支行</string>
+    <string name="abc_img_hint">开户支行</string>
+    <string name="abc_bottom">需上传银行卡正面照</string>
+    <string name="abc_select_province">选择省</string>
+    <string name="abc_select_city">选择市</string>
+    <string name="abc_select_area">选择区</string>
+    <string name="arp_vercode_err">验证码错误</string>
+    <string name="pay_pwd_length">支付密码设置有误，请确保两次密码一致且长度为6位</string>
+    <string name="arp_set_pwd_success">设置密码成功</string>
+    <string name="arp_set_pwd_fail">设置密码失败，请稍后重试</string>
+    <string name="asp_pwd_diff">两次密码不一致，请重新输入</string>
+    <string name="a_recommend_save">是否保存图片到手机</string>
+    <string name="a_recommend_save_success">图片已保存到图库中</string>
+    <string name="common_sel_province">请先选择省</string>
+    <string name="common_sel_city">请先选择市</string>
+
+    <!-- 刷新加载控件 -->
+    <string name="refresh_loading">正在加载...</string>
+
+    <string name="dialog_personal_phone">075566690068</string>
+    <string name="dialog_personal_exit">您确认退出该账号么</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+</resources>

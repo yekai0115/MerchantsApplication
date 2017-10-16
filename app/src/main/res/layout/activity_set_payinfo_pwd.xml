@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_text_gray3"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_text"/>
+
+    <LinearLayout
+        android:id="@+id/aap_linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/aap_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="45dp"
+                android:text="支付密码"
+                android:textColor="@color/arp_text1"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/asp_pwd1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/aap_tv1"
+                android:background="@null"
+                android:hint="请输入支付密码"
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                android:textColor="@color/arp_text1"
+                android:textColorHint="@color/hint_text_gray"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_line_height"
+                android:layout_below="@id/asp_pwd1"
+                android:layout_marginTop="0dp"
+                android:background="@color/afl_blow_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/aap_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="45dp"
+                android:text="确认密码"
+                android:textColor="@color/arp_text1"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/asp_pwd2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/aap_tv2"
+                android:background="@null"
+                android:hint="确认支付密码"
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                android:textColor="@color/arp_text1"
+                android:textColorHint="@color/hint_text_gray"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bg_login_style"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/bg_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_text_gray3"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_text"/>
+    <com.ddz.mearchant.view.HandyTextView
+        android:id="@+id/parent_type_show"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ededed"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"/>
+    <ListView
+        android:id="@+id/list_product_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/tab_text_gray3"
+        android:dividerHeight="0.5dp">
+    </ListView>
+</LinearLayout>

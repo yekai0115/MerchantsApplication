@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_text_diveder"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tab_line_color"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/search_linear"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="22.5dp"
+            android:layout_marginTop="7dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/bg_search_style">
+
+            <EditText
+                android:id="@+id/search_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="11dp"
+                android:drawableLeft="@drawable/manage_search"
+                android:drawablePadding="5dp"
+                android:hint="查找"
+                android:background="@null"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:textColorHint="@color/bg_color"
+                android:textColor="@color/bg_color"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <com.ddz.mearchant.view.HandyTextView
+            android:id="@+id/canael_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="17.5dp"
+            android:layout_marginRight="20dp"
+            android:drawablePadding="5dp"
+            android:text="取消"
+            android:textColor="@color/bg_color"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

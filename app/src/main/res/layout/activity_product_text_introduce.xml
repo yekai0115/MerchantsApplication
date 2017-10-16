@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_text_gray3"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_text"/>
+    <LinearLayout
+        android:id="@+id/shop_name_linear"
+        android:layout_width="match_parent"
+        android:layout_height="266dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/product_introduce_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="请输入商品详情介绍"
+            android:layout_gravity="top"
+            android:paddingLeft="15dp"
+            android:gravity="top"
+            android:paddingTop="20dp"
+            android:paddingRight="15dp"
+            android:lineSpacingExtra="5dp"
+            android:textColorHint="#cecece"
+            android:background="@null"
+            android:textColor="@color/order_text_color"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

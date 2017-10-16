@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/order_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+        <LinearLayout
+            android:id="@+id/custom_name_linear"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/bg_color"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <CheckBox
+                android:id="@+id/add_custom_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:button="@null"
+                android:visibility="gone"
+                android:background="@drawable/checkbox_selector"
+                />
+            <com.ddz.mearchant.view.HandyTextView
+                android:id="@+id/custom_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="店铺名"
+                android:background="@null"
+                android:textColor="@color/order_text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+</LinearLayout>
+    <!-- 引导页 -->

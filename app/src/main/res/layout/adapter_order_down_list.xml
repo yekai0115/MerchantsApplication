@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/order_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <com.ddz.mearchant.view.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/saler_pic"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:border_color="@color/bg_color"
+            android:layout_marginLeft="13dp"
+            android:layout_gravity="center"
+            app:border_width="1dp" />
+        <com.ddz.mearchant.view.HandyTextView
+            android:id="@+id/saler_name"
+            android:layout_marginLeft="9dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16dp"
+            android:textColor="#272727"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e5e5e5">
+
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70.5dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="13dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:id="@+id/money_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="金额:￥"
+                    android:textColor="#272727"
+                    android:textSize="14sp" />
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/money_name"
+                    android:text="150"
+                    android:textColor="#272727"
+                    android:textSize="14sp" />
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/time"
+                    android:layout_gravity="right"
+                    android:text="时间:"
+                    android:textColor="#272727"
+                    android:textSize="14sp" />
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="2017-01-01"
+                    android:textColor="#272727"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="13dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:id="@+id/order_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单号:"
+                    android:textColor="#272727"
+                    android:textSize="14sp" />
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:id="@+id/order_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/order_name"
+                    android:text="1545464"
+                    android:textColor="#272727"
+                    android:textSize="14sp" />
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/proyit"
+                    android:layout_gravity="right"
+                    android:text="让利类型:"
+                    android:textColor="#272727"
+                    android:textSize="14sp" />
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:id="@+id/proyit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="10%"
+                    android:textColor="#272727"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+    <!-- 引导页 -->

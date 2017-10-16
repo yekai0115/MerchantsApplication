@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_gravity="center"
+    android:background="@drawable/tips_bg2"
+    android:gravity="center">
+
+    <View
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.ddz.mearchant.dialog.avloading.AVLoadingIndicatorView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:indicator="LineSpinFadeLoader" />
+
+
+        <TextView
+            android:id="@+id/tips_loading_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="1"
+            android:text="Loading..."
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</RelativeLayout>

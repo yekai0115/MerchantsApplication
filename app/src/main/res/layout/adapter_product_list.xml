@@ -1,0 +1,240 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="-140dp"
+    android:paddingRight="-140dp"
+    android:background="@color/bg_blank_color"
+     >
+    <LinearLayout
+        android:id="@+id/llayout_left"
+        android:layout_width="140dp"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/delete1"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="#ffd04e"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/other1"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="#ff6a5a"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/product_detail_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <CheckBox
+            android:id="@+id/show_product_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/checkbox_selector"
+            android:button="@null"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="12dp">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/product_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="15dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/login_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_gravity="bottom"
+                android:background="#000000"
+                android:alpha="0.5"
+                android:gravity="center"
+                android:orientation="horizontal">
+            </LinearLayout>
+            <com.ddz.mearchant.view.HandyTextView
+                android:id="@+id/product_status"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="库存不足"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal">
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:id="@+id/product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:text="商品名:"
+                    android:textColor="#272727"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:orientation="horizontal">
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:text="价格:"
+                    android:textColor="#ff5806"
+                    android:textSize="12sp" />
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:id="@+id/product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="115"
+                    android:textColor="#ff5806"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:text="让利类型:"
+                    android:textColor="#949494"
+                    android:textSize="12dp" />
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:id="@+id/product_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="0%"
+                    android:textColor="#949494"
+                    android:textSize="12dp" />
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:id="@+id/product_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="0件"
+                    android:textColor="#949494"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llayout_right"
+        android:layout_width="140dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" >
+
+        <RelativeLayout
+            android:id="@+id/other2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="#ffd04e"
+            android:clickable="true" >
+
+            <com.ddz.mearchant.view.HandyTextView
+                android:id="@+id/text_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="上架"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/delete2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="#ff6a5a"
+            android:clickable="true" >
+
+            <com.ddz.mearchant.view.HandyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    </RelativeLayout>
+    <!--<include layout="@layout/activity_hide_button"/>-->
+</LinearLayout>
+<!-- 引导页 -->

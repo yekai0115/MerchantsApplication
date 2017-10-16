@@ -1,0 +1,208 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/order_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/tab_text_diveder"
+     >
+
+    <LinearLayout
+        android:id="@+id/to_detail_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="13.5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/order_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/login_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="12dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:id="@+id/order_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="商品"
+                    android:textColor="#272727"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_text"
+                android:orientation="horizontal">
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:text="价格:"
+                    android:textColor="#ff5806"
+                    android:textSize="12sp" />
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:id="@+id/order_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="115"
+                    android:textColor="#ff5806"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_text2"
+                android:orientation="horizontal">
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:text="让利类型:"
+                    android:textColor="#949494"
+                    android:textSize="12dp" />
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="10%"
+                    android:textColor="#949494"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:backgroundTint="@color/white"
+        android:background="#e5e5e5"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#e5e5e5"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white">
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:id="@+id/color_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="颜色分类:"
+                    android:textColor="#949494"
+                    android:textSize="14sp" />
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:id="@+id/order_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/color_name"
+                    android:gravity="center_vertical|left"
+                    android:layout_toLeftOf="@+id/show_button_linear"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textColor="#949494"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/show_button_linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/order_button"
+                        android:layout_width="75dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="9dp"
+                        android:background="@drawable/bg_button_style"
+                        android:gravity="center"
+                        android:text="查看物流"
+                        android:visibility="gone"
+                        android:textColor="#272727"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/order_button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_button_style"
+                        android:gravity="center"
+                        android:text="查看物流查看物流"
+                        android:visibility="gone"
+                        android:textColor="#272727"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_show"
+        android:layout_width="match_parent"
+        android:layout_height="13.5dp"
+        android:background="@color/tab_text_diveder"
+        android:visibility="gone"
+        />
+</LinearLayout>
+<!-- 引导页 -->

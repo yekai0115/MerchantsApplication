@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:id="@+id/item_grida_image"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/manage_details_add" >
+    </ImageView>
+    <ImageView
+        android:id="@+id/item_grida_delete"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="62dp"
+        android:background="@drawable/manage_details_close"/>
+</FrameLayout>

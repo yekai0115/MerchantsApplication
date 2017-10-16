@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/tab_text_gray3"
+        android:orientation="vertical">
+    <include layout="@layout/common_title_text"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/bg_color"
+        android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:id="@+id/plat_mes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:paddingLeft="90dp"
+                    android:text="平台消息"
+                    android:textColor="@color/tab_line_color"
+                    android:textSize="15sp" />
+                <View
+                    android:id="@+id/plat_line_show"
+                    android:layout_width="95dp"
+                    android:layout_height="3.5dp"
+                    android:background="@drawable/tap_line_show2"
+                    android:gravity="bottom"
+                    android:layout_marginLeft="75dp"
+                    >
+                </View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="right"
+                >
+
+                <com.ddz.mearchant.view.HandyTextView
+                    android:id="@+id/cust_mes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:paddingRight="90dp"
+                    android:text="客户消息"
+                    android:textColor="@color/order_text_color"
+                    android:textSize="15sp" />
+                <View
+                    android:id="@+id/cust_line_show"
+                    android:layout_width="95dp"
+                    android:layout_height="3.5dp"
+                    android:background="@color/toming"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="75dp"
+                    >
+                </View>
+
+            </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

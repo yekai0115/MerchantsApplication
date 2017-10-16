@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <com.ddz.mearchant.view.PullToRefreshLayout
+        android:id="@+id/product_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <include layout="@layout/refresh_head" />
+        <com.ddz.mearchant.view.PullableListView
+            android:id="@+id/list_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            />
+        <include layout="@layout/load_more" />
+    </com.ddz.mearchant.view.PullToRefreshLayout>
+    <LinearLayout
+        android:id="@+id/no_list_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="115dp"
+            android:src="@drawable/blank"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:textColor="@color/amf0_sec_01"
+            android:gravity="center"
+            android:text="暂无数据,休息一下"/>
+    </LinearLayout>
+</LinearLayout>

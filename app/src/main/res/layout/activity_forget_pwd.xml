@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_line_color"
+    android:orientation="vertical">
+
+    <com.ddz.mearchant.view.ClearEditText
+        android:id="@+id/input_mobile"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入手机号码"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+    <com.ddz.mearchant.view.ClearEditText
+        android:id="@+id/input_yzm"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入验证码"/>
+    <Button
+        android:id="@+id/get_yzm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取验证码"
+        android:layout_gravity="right"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical|right"
+        android:textColor="@color/bg_color"
+        android:background="@drawable/bg_login_style"
+        />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:gravity="center_vertical|right"
+        android:textColor="@color/bg_color"
+        android:background="@drawable/bg_login_style"
+        />
+</LinearLayout>

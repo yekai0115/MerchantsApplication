@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+    <com.ddz.mearchant.view.PullToRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <include layout="@layout/refresh_head" />
+        <com.ddz.mearchant.view.PullableScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <com.ddz.mearchant.view.PullableExpandableListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </com.ddz.mearchant.view.PullableExpandableListView>
+            </LinearLayout>
+        </com.ddz.mearchant.view.PullableScrollView>
+        <include layout="@layout/load_more" />
+    </com.ddz.mearchant.view.PullToRefreshLayout>
+
+</LinearLayout>

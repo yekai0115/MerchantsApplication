@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_blank_color">
+    <com.ddz.mearchant.widget.StretchScrollView
+        android:id="@+id/mScrollView"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/fl_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="vertical" >
+
+                    <com.praise.widget.viewpager.LoopViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <com.praise.widget.viewpager.MaterialIndicator
+                        android:id="@+id/bannerIndicator"
+                        style="@style/MaterialIndicator.Demo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginBottom="10dp" />
+                </FrameLayout>
+
+
+
+
+
+            </FrameLayout>
+
+            <com.ddz.commerce.widget.MyGridView
+                android:id="@+id/gv_hangye"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:cacheColorHint="@android:color/transparent"
+                android:listSelector="@android:color/transparent"
+                android:fastScrollEnabled="true"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="4"
+                android:verticalSpacing="13dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_2"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                     />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_e3" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="82dp"
+                        android:scaleType="fitXY"
+                         />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.5dp"
+                        android:background="@color/line_e3" />
+
+                    <ImageView
+                        android:id="@+id/img_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="82dp"
+                        android:scaleType="fitXY"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_new"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                 />
+            <!--常去的店-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+
+                    android:drawablePadding="10dp"
+
+                    android:gravity="center"
+                    android:text="常去的店"
+
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                     />
+
+
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <com.praise.widget.MyGridView
+                            android:id="@+id/gv_offten"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:layout_gravity="center"
+                            android:paddingLeft="15dp"
+                            android:cacheColorHint="@android:color/transparent"
+                            android:listSelector="@android:color/transparent"
+                            android:fastScrollEnabled="true"
+                            android:gravity="center"
+
+                            />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+
+                android:drawablePadding="10dp"
+
+                android:gravity="center"
+                android:text="为你优选"
+
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                 />
+
+            <com.ddz.commerce.widget.MyListView
+                android:id="@+id/lv_yxShop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/line_color"
+                android:dividerHeight="0.5dp"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                android:layout_marginBottom="20dp"
+                />
+        </LinearLayout>
+
+
+            <!--品牌店-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:visibility="gone">
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line_color" />
+
+
+                <com.praise.widget.MyListView
+                    android:id="@+id/lv_brandShop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@color/line_color"
+                    android:dividerHeight="0.5dp"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none"
+                    android:layout_marginBottom="20dp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </com.ddz.mearchant.widget.StretchScrollView>
+    <RelativeLayout
+        android:id="@+id/search_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+
+            android:layout_toLeftOf="@+id/tv_scan"
+
+            android:layout_toStartOf="@+id/tv_scan"
+            >
+            <EditText
+                android:id="@+id/input_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_search_white"
+                android:imeOptions="actionSearch"
+                android:cursorVisible="false"
+                android:maxLength="10"
+                android:paddingLeft="10dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:drawableLeft="@drawable/search"
+                android:hint="@string/home_search_hint"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_main_color"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:maxLines="1"
+                android:gravity="center|left" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:drawablePadding="5dp"
+            android:text="扫码"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/img_scan"
+            />
+    </RelativeLayout>
+</FrameLayout>

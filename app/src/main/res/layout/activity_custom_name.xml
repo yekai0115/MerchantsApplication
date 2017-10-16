@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_text_gray3"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_text"/>
+    <LinearLayout
+        android:id="@+id/custom_name_linear"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/bg_color"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <com.ddz.mearchant.view.ClearEditText
+            android:id="@+id/custom_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint="请输入分类名称"
+            android:background="@null"
+            android:textColor="@color/order_text_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

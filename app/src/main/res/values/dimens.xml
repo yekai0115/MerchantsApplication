@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="fbutton_default_conner_radius">8dp</dimen>
+    <dimen name="fbutton_default_padding_left">10dp</dimen>
+    <dimen name="fbutton_default_padding_right">10dp</dimen>
+    <dimen name="fbutton_default_padding_top">5dp</dimen>
+    <dimen name="fbutton_default_padding_bottom">5dp</dimen>
+    <dimen name="fbutton_default_shadow_height">4dp</dimen>
+
+    <!-- custom toggle button -->
+    <dimen name="settings_toggle_width">180dp</dimen>
+
+    <dimen name="divider_line_height">0.5dp</dimen>
+    <dimen name="divider_line_height1">1dp</dimen>
+
+    <dimen name="qrcode_size">200dp</dimen>
+
+    <dimen name="side_letter_bar_letter_size">11sp</dimen>
+    <dimen name="side_letter_bar_width">30dp</dimen>
+    <dimen name="city_text_size">16sp</dimen>
+    <dimen name="padding_text">12dp</dimen>
+    <dimen name="padding_text2">6dp</dimen>
+</resources>

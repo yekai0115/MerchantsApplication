@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#f4f4f4"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear_view"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/tab_line_color"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/relayout_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/manager_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/manage_option" />
+
+                    <com.ddz.mearchant.view.HandyTextView
+                        android:id="@+id/manager_all_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@+id/manager_all"
+                        android:ellipsize="end"
+                        android:maxLength="4"
+                        android:text="全部"
+                        android:textColor="@color/bg_color"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:id="@+id/search_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_toLeftOf="@+id/manger_edit"
+                        android:layout_toRightOf="@+id/manager_all_text"
+                        android:background="@drawable/bg_search_style">
+
+                        <com.ddz.mearchant.view.HandyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:drawableLeft="@drawable/manage_search"
+                            android:drawablePadding="5dp"
+                            android:text="查找"
+                            android:textColor="@color/bg_color"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/manger_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="22dp"
+                        android:layout_toLeftOf="@+id/manager_more"
+                        android:background="@drawable/manage_compile" />
+
+                    <RelativeLayout
+                        android:id="@+id/manager_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/manage_more" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/choise_linear"
+                android:layout_below="@+id/linear_view"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.ddz.mearchant.view.PullToRefreshLayout
+                    android:id="@+id/product_refresh_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/linear_view">
+
+                    <include layout="@layout/refresh_head" />
+
+                    <com.ddz.mearchant.view.SlideListView2
+                        android:id="@+id/manager_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/choise_linear"
+                        android:divider="#f4f4f4"
+                        android:scrollbars="none"
+                        android:dividerHeight="13dp">
+
+                    </com.ddz.mearchant.view.SlideListView2>
+
+                    <include layout="@layout/load_more" />
+                </com.ddz.mearchant.view.PullToRefreshLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/no_list_show"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="115dp"
+                    android:src="@drawable/blank" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="暂无数据,休息一下"
+                    android:textColor="@color/amf0_sec_01"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/add_product_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/choise_linear"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="38dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/manage_add" />
+
+            <LinearLayout
+                android:id="@+id/choise_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/show_choise_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/select_all_product"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:visibility="gone"
+                            android:background="@drawable/checkbox_selector"
+                            android:button="@null" />
+                        <com.ddz.mearchant.view.HandyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="已选商品"
+                            android:textColor="#272727"
+                            android:textSize="14sp" />
+
+                        <com.ddz.mearchant.view.HandyTextView
+                            android:id="@+id/choice_product_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="#3c9bff" />
+
+                        <com.ddz.mearchant.view.HandyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="个"
+                            android:textColor="#272727"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <com.ddz.mearchant.view.HandyTextView
+                            android:id="@+id/delete_chonic_product"
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:background="#ffeee5"
+                            android:gravity="center"
+                            android:text="删除"
+                            android:textColor="#ff5a5a"
+                            android:textSize="14sp" />
+
+                        <com.ddz.mearchant.view.HandyTextView
+                            android:id="@+id/down_chonic_product"
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:background="#ffd04e"
+                            android:gravity="center"
+                            android:text="下架"
+                            android:textColor="@color/bg_color"
+                            android:textSize="14sp" />
+
+                        <com.ddz.mearchant.view.HandyTextView
+                            android:id="@+id/up_chonic_product"
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:background="#ff5a5a"
+                            android:gravity="center"
+                            android:text="上架"
+                            android:textColor="@color/bg_color"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+    </RelativeLayout>
+    </FrameLayout>

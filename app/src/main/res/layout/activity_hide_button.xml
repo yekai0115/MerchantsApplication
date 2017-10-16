@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="horizontal" >
+    <com.ddz.mearchant.view.HandyTextView
+        android:id="@+id/down_button"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:text="下架"
+        android:gravity="center"
+        android:textColor="@color/bg_color"
+        android:background="#ffd04e"/>
+    <com.ddz.mearchant.view.HandyTextView
+        android:id="@+id/delete_button"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:text="删除"
+        android:gravity="center"
+        android:textColor="@color/bg_color"
+        android:background="#ff6a5a"/>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_line_color"
+    android:orientation="vertical">
+
+    <com.ddz.mearchant.view.ClearEditText
+        android:id="@+id/input_new_pwd"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入新密码"/>
+
+    <com.ddz.mearchant.view.ClearEditText
+        android:id="@+id/input_confirm_pwd"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请再次输入密码"/>
+
+    <Button
+        android:id="@+id/set_pwd_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完成"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:gravity="center_vertical|right"
+        android:textColor="@color/bg_color"
+        android:background="@drawable/bg_login_style"
+        />
+</LinearLayout>
